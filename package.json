@@ -1,0 +1,34 @@
+{
+  "name": "MangaPlus Extension",
+  "private": true,
+  "description": "A Paperback extension for MangaPlus.",
+  "type": "module",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "oxlint --type-aware --fix",
+    "lint:check": "oxlint --type-aware --deny-warnings",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "conformance": "npm run tsc && npm run lint:check && npm run format:check",
+    "bundle": "paperback-cli bundle",
+    "serve": "paperback-cli serve",
+    "dev": "paperback-cli serve --watch",
+    "logcat": "paperback-cli logcat",
+    "test": "paperback-cli test --noConsole --output ./bundles/tests.json",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@paperback/toolchain": "^1.0.0-alpha.92",
+    "@paperback/types": "^1.0.0-alpha.92",
+    "@types/chai": "^5.2.3",
+    "chai": "^6.2.2",
+    "cheerio": "^1.2.0",
+    "fastest-levenshtein": "^1.0.16",
+    "husky": "^9.1.7",
+    "oxfmt": "^0.60.0",
+    "oxlint": "^1.75.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "stemmer": "^2.0.1",
+    "typescript": "^7.0.2"
+  }
+}
