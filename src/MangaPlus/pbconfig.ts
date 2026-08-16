@@ -19,6 +19,10 @@ export default {
   badges: [],
   developers: [
     {
+      name: "Aksdenn",
+      github: "https://github.com/aksdenn",
+    },
+    {
       name: "Yves Pa",
       github: "https://github.com/YvesPa",
     },
